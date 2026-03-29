@@ -145,18 +145,17 @@ a:hover {
 }
 .tag{
     background-color: transparent;
-    text-align: center;
-  
-    letter-spacing: 0.5px;
-   
-    font-size: 9px;
-    padding: 10px 20px;
-    border-radius: 26px;
-     border: 2px solid #E8A530;
-     width: 17%;
-     display: inline-block;
-     color: orange;
-     font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 9px;
+  padding: 10px 20px;
+  border-radius: 26px;
+  border: 2px solid #E8A530;
+  width: 17%;
+  display: inline-block;
+  color: orange;
+  font-weight: bold;
+}
      
 }
 
