@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 :root {
   --cor-principal: #0C0D11;
   --cor-segundaria:#E8A530;
@@ -13,13 +15,19 @@ header{
     background-color: var(--cor-principal);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 76px;
     width: 100%;
+      position: fixed;
+     top: 0;
+
+    z-index: 1000;
 }
 nav {
     flex: auto;
     display: flex;
     justify-content: center;
+    
      
    
 }
@@ -110,7 +118,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
+    margin-top: 76px;
   
      display: flex;
     padding: 15px 30px;
@@ -221,4 +229,373 @@ a{
 
 .dd1{
    color: var(--cor-segundaria);
+}
+.alta{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+   
+  
+     display: flex;
+    padding: 15px 30px;
+    
+    border-bottom: 1px solid #373737;
+    
+}
+.bb p{
+    color: black;
+}
+.texto3 h1{
+    color: white;
+    font-size: 41px;
+    font-weight: bold;
+    
+}
+
+.todos-cards{
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card img{
+    width: 18vh;
+    height: 29vh;
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
+.card h2{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+.telafinal{
+      background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 40px;
+    
+    color: white;
+    width: 100%;
+    min-height: auto;
+  
+    padding: 40px 30px;
+    
+    border-bottom: 1px solid #373737;
+    
+}
+.text4{
+    text-align: center;
+}
+.text4 h1{
+    font-size: 41px;
+    font-weight: bold;
+}
+.text4 p{
+    color: rgb(136, 133, 133);
+    font-size: 16px;
+    
+}
+.t_cards{
+    display: flex;
+    padding-top: 30px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cards2{
+    width: 37vh;
+    height: auto;
+    background-color:#16191F;
+    border-radius: 10px;
+    flex: 0 0 30.33%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+   
+.cards2 p{
+      color: rgb(136, 133, 133);
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: center;
+    padding-top: 0;
+}
+.cards2 img{
+    height: 36px;
+    width: 36px;
+    object-fit: contain;
+}
+#divimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21242C;
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+footer{
+   background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-between;
+    height: 76px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    
+.telainicial{
+   
+    flex-direction: column;
+    height: 80vh;
+    
+    gap: 20px;
+   
+}
+.telainicial h1 {
+    font-size: 42px;
+    
+}
+.telainicial .p1 {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.tag{
+    letter-spacing: 0.5px;
+    font-size: 9px;
+    padding: 10px 20px;
+     width: 49%;
+}
+
+.lg{
+    display: flex;
+    gap: 13px;
+    justify-content: flex-start;
+   
+}
+
+.bb{
+       background-color: var(--cor-segundaria);
+   align-items: center;     
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  color: black;
+  
+  border-radius: 10px;
+  width: 149px;
+  text-align: center;
+  height: 44px;
+ 
+
+}
+.card img{
+    width: 15vh;
+    height: 21vh;
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
+.bb2{
+       align-items: center;     
+  justify-content: center;
+  display: flex;
+  background-color: black;
+  color: white;
+  
+  height: 35px;
+  border-radius: 10px;
+  width: 139px;
+  text-align: center;
+  border: 1px solid white;
+  height: 44px;
+ 
+}
+.t_cards{
+    display: flex;
+     padding-top: 3vh;
+    flex-direction: column;
+    justify-content: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-left: 10vh;
+    
+
+}
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+nav {
+    flex: auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav.mobile-active {
+    position: fixed;
+    top: 76px;
+    left: 0;
+    right: 0;
+    background-color: var(--cor-principal);
+    flex-direction: column;
+    padding: 20px 0;
+    z-index: 999;
+}
+
+nav.mobile-active ul {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+}
+
+nav.mobile-active li {
+    padding: 15px 30px;
+    border-bottom: 1px solid #373737;
+}
+
+nav.mobile-active a {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    nav.mobile-active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .login {
+        margin-right: 10px;
+    }
+
+    .btn, .btn2 {
+        width: 80px;
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .telafinal {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .text4 h1 {
+        font-size: 28px;
+    }
+
+    .text4 p {
+        font-size: 14px;
+    }
+
+    .t_cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .cards2 {
+        width: 100%;
+        max-width: 280px;
+        flex: 0 1 auto;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .logo p {
+        display: none;
+    }
+
+    .login {
+        gap: 5px;
+    }
+
+    .btn, .btn2 {
+        width: 70px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .telainicial h1 {
+        font-size: 28px;
+    }
+
+    .telainicial .p1 {
+        font-size: 12px;
+    }
+
+    .tag {
+        width: 60%;
+    }
+
+    .text4 h1 {
+        font-size: 24px;
+    }
+
+    .text4 p {
+        font-size: 12px;
+    }
+
+    .telafinal {
+        padding: 20px 10px;
+    }
+
+    .t_cards {
+        padding-top: 2vh;
+        gap: 15px;
+    }
+
+    .cards2 {
+        width: 100%;
+        max-width: 260px;
+        padding: 15px;
+    }
+
+    .cards2 h2 {
+        font-size: 17px;
+    }
+
+    .cards2 p {
+        font-size: 12px;
+    }
+
+    #divimg {
+        height: 45px;
+        width: 45px;
+    }
 }

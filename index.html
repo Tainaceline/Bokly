@@ -15,7 +15,10 @@
             <i class="fa-solid fa-book" style="color: rgb(232,165,48);"></i>
             <p id="ll">Bokly</p>
         </section>
-        <nav>
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="navMenu">
             <ul>
                 <li><a href="">Explorar</a></li>
                 <li><a href="">Listas</a></li>
@@ -34,7 +37,7 @@
 
            <p class="p1">Registre suas leituras, avalie obras, crie listas e descubra novos mundos. Livros, mangás, manhwas, HQs e webnovels — tudo em um só lugar.</p>
             <section class="lg">
-                <div class="bb"><a href="">Comece agora</a></div>
+                <div class="bb"><a href=""><p>Comece agora</p></a></div>
                 <div class="bb2">Registrar</div>
             </section>
             <section class="stats">
@@ -57,10 +60,123 @@
                 </div>
             </section>
         </section>
-        <section class="alta"></section>
+        <section class="alta">
 
-        <section class="telafinal"></section>
+            <div class="texto3">
+                <h1>Em Alta</h1>
+            </div>
+            <section class="todos-cards">
+                 <div class="card">
+                    <img src="imagem/sasuke.jpg" alt="Capa do Livro">
+                    <h2>Sasuke Uchiha Novel</h2>
+                    
+                </div>
+                    <div class="card">
+                        <img src="imagem/selfish_romance_romance_egoista.webp" alt="Capa do Livro">
+                        <h2> Selfish Romance</h2>
+                        </div>
+                    <div class="card">
+                        <img src="imagem/not that.webp" alt="Capa do Livro">
+                        <h2> Not That</h2>
+                        </div>
+                        <div class="card">
+                        <img src="imagem/revelation.jpg" alt="Capa do Livro">
+                        <h2> Revelation</h2>
+                        </div>
+                          <div class="card">
+                        <img src="imagem/SYS.webp" alt="Capa do Livro">
+                        <h2> SYS</h2>
+                        </div>
+                          <div class="card">
+                        <img src="imagem/operation_true_love_operacao_amor_verdadeiro.webp" alt="Capa do Livro">
+                        <h2> Operation: True Love</h2>
+                        
+                        </div>
+                          <div class="card">
+                        <img src="imagem/martial.webp" alt="Capa do Livro">
+                        <h2> Martial Arts</h2>
+                        </div>
+                          <div class="card">
+                        <img src="imagem/jujutsu.jpg" alt="Capa do Livro">
+                        <h2> Revelation</h2>
+                        </div>
+
+            </section>
+               
+                   
+             
+           
+        </section>
+
+        <section class="telafinal">
+            <div class="text4">
+                <h1>Tudo para o  <span class="dd1">leitor moderno</span> </h1>
+                <p>Livros, mangás, manhwas, HQs e webnovels — organize,<br> avalie e compartilhe.</p>
+            </div>
+            <div class="t_cards">
+                <div class="cards2" >
+                    <div id="divimg"><img src="imagem/list-solid.png" alt="Organize"></div>
+                    <h2>Organize</h2>
+                    <p>Crie listas personalizadas para acompanhar suas leituras, organizar por gêneros, autores ou status de leitura.</p>
+                </div>
+                <div class="cards2">
+                    <div id="divimg"><img src="imagem/star-regular.png" alt="Avalie"> </div>
+                    <h2>Avalie</h2>
+                    <p>Deixe sua opinião sobre as obras que leu, compartilhe suas avaliações e descubra o que outros leitores estão dizendo.</p>
+            </div>
+                <div class="cards2">
+                    <div id="divimg"><img src="imagem/share-solid.png" alt="Compartilhe"></div>
+                    <h2>Compartilhe</h2>
+                    <p>Conecte-se com outros leitores, compartilhe suas listas, avaliações e descubra novas obras através da comunidade.</p>
+                </div>
+                <div class="cards2">
+                    <div id="divimg"><img src="imagem/magnifying-glass-solid.png" alt="Descubra"></div>
+                    <h2>Descubra</h2>
+                    <p>Explore um vasto catálogo de obras, encontre novas leituras e descubra o que está em alta na comunidade.</p>
+                </div>
+                <div class="cards2">
+                    <div id="divimg"><img src="imagem/book-solid.png" alt=""></div>
+                    <h2>Registre leituras</h2>
+                    <p>Marque como lido, registre datas e escreva reviews.</p>
+                </div>
+                 <div class="cards2">
+                    <div id="divimg"><img src="imagem/user-solid.png" alt=""></div>
+                    <h2>Conecte-se</h2>
+                    <p>Siga amigos e descubra o que eles estão lendo</p>
+                </div>
+            </div>
+        </section>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+           <section class="logo">
+            <i class="fa-solid fa-book" style="color: rgb(232,165,48);"></i>
+            <p id="ll">Bokly</p>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Privacidade</a></li>
+                <li><a href="">Contatos</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('mobile-active');
+        });
+
+        // Fechar menu ao clicar em um link
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('mobile-active');
+            });
+        });
+    </script>
 </body>
 </html>
