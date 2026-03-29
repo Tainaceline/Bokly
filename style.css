@@ -235,15 +235,10 @@ a{
     display: flex;
     flex-direction: column;
     color: white;
-    height: 40%;
+    height: auto;
     width: 100%;
-   
-  
-     display: flex;
-    padding: 15px 30px;
-    
+    padding: 40px 30px;
     border-bottom: 1px solid #373737;
-    
 }
 .bb p{
     color: black;
