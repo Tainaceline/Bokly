@@ -151,18 +151,19 @@ a:hover {
   padding: 10px 20px;
   border-radius: 26px;
   border: 2px solid #E8A530;
-  width: 17%;
+  width: 14%;
   display: inline-block;
   color: orange;
   font-weight: bold;
 }
      
-}
+
 
 .lg{
     display: flex;
     gap: 13px;
     justify-content: flex-start;
+    flex-direction: row;
    
 }
 a{
@@ -234,6 +235,7 @@ a{
     display: flex;
     flex-direction: column;
     color: white;
+    height: 40%;
     width: 100%;
    
   
@@ -353,248 +355,3 @@ footer{
     width: 100%;
 }
 
-@media (max-width: 768px) {
-    
-.telainicial{
-   
-    flex-direction: column;
-    height: 80vh;
-    
-    gap: 20px;
-   
-}
-.telainicial h1 {
-    font-size: 42px;
-    
-}
-.telainicial .p1 {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.tag{
-    letter-spacing: 0.5px;
-    font-size: 9px;
-    padding: 10px 20px;
-     width: 49%;
-}
-
-.lg{
-    display: flex;
-    gap: 13px;
-    justify-content: flex-start;
-   
-}
-
-.bb{
-       background-color: var(--cor-segundaria);
-   align-items: center;     
-  justify-content: center;
-  display: flex;
-  font-weight: bold;
-  color: black;
-  
-  border-radius: 10px;
-  width: 149px;
-  text-align: center;
-  height: 44px;
- 
-
-}
-.card img{
-    width: 15vh;
-    height: 21vh;
-    object-fit: cover;
-    border-radius: 10px;
-   
-}
-.bb2{
-       align-items: center;     
-  justify-content: center;
-  display: flex;
-  background-color: black;
-  color: white;
-  
-  height: 35px;
-  border-radius: 10px;
-  width: 139px;
-  text-align: center;
-  border: 1px solid white;
-  height: 44px;
- 
-}
-.t_cards{
-    display: flex;
-     padding-top: 3vh;
-    flex-direction: column;
-    justify-content: column;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding-left: 10vh;
-    
-
-}
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px 15px;
-}
-
-nav {
-    flex: auto;
-    display: flex;
-    justify-content: center;
-}
-
-nav.mobile-active {
-    position: fixed;
-    top: 76px;
-    left: 0;
-    right: 0;
-    background-color: var(--cor-principal);
-    flex-direction: column;
-    padding: 20px 0;
-    z-index: 999;
-}
-
-nav.mobile-active ul {
-    flex-direction: column;
-    gap: 0;
-    width: 100%;
-}
-
-nav.mobile-active li {
-    padding: 15px 30px;
-    border-bottom: 1px solid #373737;
-}
-
-nav.mobile-active a {
-    display: block;
-    width: 100%;
-}
-
-@media (max-width: 768px) {
-    nav {
-        display: none;
-    }
-
-    nav.mobile-active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: flex;
-        align-items: center;
-    }
-
-    header {
-        justify-content: space-between;
-    }
-
-    .login {
-        margin-right: 10px;
-    }
-
-    .btn, .btn2 {
-        width: 80px;
-        height: 32px;
-        font-size: 12px;
-    }
-
-    .telafinal {
-        height: auto;
-        padding: 30px 15px;
-    }
-
-    .text4 h1 {
-        font-size: 28px;
-    }
-
-    .text4 p {
-        font-size: 14px;
-    }
-
-    .t_cards {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        gap: 20px;
-    }
-
-    .cards2 {
-        width: 100%;
-        max-width: 280px;
-        flex: 0 1 auto;
-    }
-    
-}
-
-@media (max-width: 480px) {
-    .logo p {
-        display: none;
-    }
-
-    .login {
-        gap: 5px;
-    }
-
-    .btn, .btn2 {
-        width: 70px;
-        height: 30px;
-        font-size: 11px;
-    }
-
-    .telainicial h1 {
-        font-size: 28px;
-    }
-
-    .telainicial .p1 {
-        font-size: 12px;
-    }
-
-    .tag {
-        width: 60%;
-    }
-
-    .text4 h1 {
-        font-size: 24px;
-    }
-
-    .text4 p {
-        font-size: 12px;
-    }
-
-    .telafinal {
-        padding: 20px 10px;
-    }
-
-    .t_cards {
-        padding-top: 2vh;
-        gap: 15px;
-    }
-
-    .cards2 {
-        width: 100%;
-        max-width: 260px;
-        padding: 15px;
-    }
-
-    .cards2 h2 {
-        font-size: 17px;
-    }
-
-    .cards2 p {
-        font-size: 12px;
-    }
-
-    #divimg {
-        height: 45px;
-        width: 45px;
-    }
-}

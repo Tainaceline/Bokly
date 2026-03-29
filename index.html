@@ -15,10 +15,7 @@
             <i class="fa-solid fa-book" style="color: rgb(232,165,48);"></i>
             <p id="ll">Bokly</p>
         </section>
-        <button class="menu-toggle" id="menuToggle">
-            <i class="fas fa-bars"></i>
-        </button>
-        <nav id="navMenu">
+        <nav>
             <ul>
                 <li><a href="">Explorar</a></li>
                 <li><a href="">Listas</a></li>
@@ -162,21 +159,5 @@
         </nav>
 
     </footer>
-    <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const navMenu = document.getElementById('navMenu');
-
-        menuToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('mobile-active');
-        });
-
-        // Fechar menu ao clicar em um link
-        const navLinks = navMenu.querySelectorAll('a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navMenu.classList.remove('mobile-active');
-            });
-        });
-    </script>
 </body>
 </html>
